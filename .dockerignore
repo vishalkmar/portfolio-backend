@@ -9,4 +9,6 @@ npm-debug.log
 *.log
 uploads/resume/*
 !uploads/resume/.gitkeep
+# the default CV ships with the repo so a fresh deploy can serve it
+!uploads/resume/resume_vishal_kumar.pdf
 README.md

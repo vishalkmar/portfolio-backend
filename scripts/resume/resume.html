@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Vishal Kumar - Resume</title>
+<style>
+  @page { size: A4; margin: 10mm 11mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+    font-size: 9.1pt;
+    line-height: 1.32;
+    color: #111;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: #1155cc; text-decoration: none; }
+
+  /* ---------- header ---------- */
+  .name {
+    text-align: center;
+    font-size: 22.5pt;
+    font-weight: 700;
+    letter-spacing: .6px;
+    margin: 0 0 2px;
+  }
+  .headline {
+    text-align: center;
+    font-size: 9.4pt;
+    font-weight: 700;
+    color: #1155cc;
+    margin-bottom: 3px;
+  }
+  .contact {
+    text-align: center;
+    font-size: 8.9pt;
+    margin-bottom: 2px;
+  }
+  .contact b { font-weight: 700; color: #1155cc; }
+  .links {
+    text-align: center;
+    font-size: 8.9pt;
+    font-weight: 700;
+    color: #1155cc;
+    margin-bottom: 7px;
+  }
+  .sep { color: #888; font-weight: 400; padding: 0 3px; }
+
+  /* ---------- sections ---------- */
+  h2 {
+    font-size: 9.6pt;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    margin: 9px 0 3px;
+    padding-bottom: 1.5px;
+    border-bottom: 1.1pt solid #333;
+  }
+  p { margin: 0 0 2.5px; }
+  .summary { text-align: justify; }
+
+  .skill-row { margin-bottom: 1.6px; }
+  .skill-row b { font-weight: 700; }
+
+  /* ---------- experience / projects ---------- */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .role { font-weight: 700; font-size: 9.4pt; }
+  .date { font-style: italic; font-size: 8.7pt; white-space: nowrap; }
+  .place { font-style: italic; font-size: 8.6pt; color: #333; margin-bottom: 2px; }
+  .link { font-weight: 700; font-size: 8.8pt; color: #1155cc; white-space: nowrap; }
+
+  ul { margin: 1px 0 4px; padding-left: 14px; }
+  li { margin-bottom: 1.6px; text-align: justify; }
+
+  .proj { margin-bottom: 5px; }
+  .proj p { text-align: justify; }
+  .tech { font-style: italic; }
+
+  /* ---------- education ---------- */
+  .edu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.6px 0;
+    border-bottom: .5pt solid #ddd;
+  }
+  .edu:last-child { border-bottom: none; }
+  .edu b { font-weight: 700; }
+  /* fits the CV onto a single A4 page */
+  body { zoom: 0.82; }
+</style>
+</head>
+<body>
+
+  <div class="name">VISHAL KUMAR</div>
+  <div class="headline">
+    Full Stack Developer<span class="sep">|</span>MERN &amp; Next.js<span class="sep">|</span>Generative AI, RAG &amp; LangChain<span class="sep">|</span>AWS, Docker &amp; CI/CD
+  </div>
+  <div class="contact">
+    Shahdara, North East Delhi - 110053, India<span class="sep">|</span><b>+91-9540792427</b><span class="sep">|</span><b>vk722413@gmail.com</b>
+  </div>
+  <div class="links">
+    linkedin.com/in/vishal-kumar-839490327<span class="sep">|</span>github.com/vishalkmar<span class="sep">|</span>vishalkmar Portfolio
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p class="summary">
+    Full Stack Developer with 1.5+ years of experience shipping production-grade web and mobile applications using
+    React.js, Next.js, Node.js, Express.js, MongoDB, MySQL and PostgreSQL. Built and deployed 10+ live platforms
+    spanning marketplaces, booking engines, CRM, e-learning, healthcare and AI products, with role-based dashboards,
+    RAG/LLM integrations, payment gateways and application security hardening, serving 50,000+ monthly users.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <p class="skill-row"><b>Languages:</b> JavaScript (ES6+), TypeScript, Python, Java, C++, C, SQL, HTML5, CSS3</p>
+  <p class="skill-row"><b>Frontend:</b> React.js, Next.js, Angular, Redux, React Native, Tailwind CSS, Bootstrap, PWA, Responsive UI</p>
+  <p class="skill-row"><b>Backend:</b> Node.js, Express.js, Django, REST API Design, JWT, RBAC, OAuth, WebSockets, Microservices</p>
+  <p class="skill-row"><b>Databases:</b> MongoDB, MySQL, PostgreSQL, Sequelize, Mongoose, Redis, Schema Design, Indexing, Query Optimization</p>
+  <p class="skill-row"><b>AI &amp; Cloud:</b> Generative AI, RAG, LangChain, Vector Databases, LLM Integration, AWS, Docker, Nginx, Linux, cPanel, Git, CI/CD</p>
+  <p class="skill-row"><b>Security:</b> OWASP Top 10, Burp Suite, SQL Injection &amp; IDOR Remediation, Broken Access Control, Cloudflare WAF, Payment Fraud Detection</p>
+  <p class="skill-row"><b>Integrations:</b> Razorpay, Stripe, PayPal, Cashfree, Google Maps &amp; Places API, Amadeus, Sabre, TourVisio, Booking.com, Firebase</p>
+
+  <h2>Professional Experience</h2>
+
+  <div class="row">
+    <span class="role">Full Stack Developer | Traveon Ventures</span>
+    <span class="date">Oct 2024 - Present</span>
+  </div>
+  <div class="place">Remote, India | Full Time</div>
+  <ul>
+    <li>Built and shipped 6 production platforms end to end - Reconnct, Abhyas Shala, Shri Yamuna Infra, Holiday Seychelles, travion.in and iccict.org - serving <b>50,000+ monthly users</b> on React.js, Next.js, Node.js, Angular and Tailwind CSS.</li>
+    <li>Integrated flight (Amadeus, Sabre), hotel (Booking.com, Expedia, TourVisio) and payment (Razorpay, Stripe, PayPal, Cashfree) APIs plus Google Maps &amp; Places.</li>
+    <li>Built a custom travel CRM for <b>20,000+ customer records</b> with lead management, booking history and automated email workflows, raising conversion <b>25%</b>.</li>
+    <li>Optimized <b>50+</b> MongoDB and PostgreSQL queries from 500 ms to 100 ms (<b>80% faster</b>) and cut database load <b>40%</b> with Redis caching.</li>
+    <li>Owned deployment, hosting, cPanel and DNS administration across all products at <b>99.9% uptime</b>; mentored 3 junior developers.</li>
+  </ul>
+
+  <div class="row">
+    <span class="role">Full Stack Developer | Abscod Informatics Pvt. Ltd.</span>
+    <span class="date">Dec 2024 - Mar 2025</span>
+  </div>
+  <div class="place">Noida, Uttar Pradesh</div>
+  <ul>
+    <li>Developed <b>ntms.in</b>, a full-stack fashion e-commerce platform (React, Node.js, Express.js, MongoDB) with catalog, cart, checkout and Razorpay payments, dual authentication, role-based dashboards and validated REST APIs.</li>
+  </ul>
+
+  <div class="row">
+    <span class="role">Full Stack Developer (Freelance) | Self-Employed, Remote</span>
+    <span class="date">Jun 2024 - Aug 2024</span>
+  </div>
+  <ul>
+    <li><b style="color:#1155cc">mcticomputer.in</b> - computer and coaching institute platform with course catalogue, live online exams and tests, auto-evaluated results, marksheet generation and integrated online payments.</li>
+    <li><b style="color:#1155cc">devshayhealthcare.com</b> - pharmacy and healthcare e-commerce platform; <b style="color:#1155cc">collabcircle.com</b> - air-conditioner service booking and technician dispatch platform.</li>
+  </ul>
+
+  <h2>Projects</h2>
+
+  <div class="proj">
+    <div class="row">
+      <span class="role">EGS Global - Smart Documentation, Apostille &amp; Visa Platform</span>
+      <span class="link">egsglobalnew.vercel.app</span>
+    </div>
+    <p>
+      Documentation and visa services platform covering MEA and HRD attestation, PCC legalisation and apostille, certified
+      translation, visa and embassy/consular services, plus travel insurance, dummy tickets and meet-and-greet and
+      accommodation assistance. Built a multi-level service catalogue with nested navigation, an authenticated customer
+      portal, enquiry-to-order workflow and document verification tracking. <span class="tech">React | Next.js | Node.js</span>
+    </p>
+  </div>
+
+  <div class="proj">
+    <div class="row">
+      <span class="role">Reconnct - Experiences Marketplace (Web + Android)</span>
+      <span class="link">reconnct.com | Google Play</span>
+    </div>
+    <p>
+      Marketplace with <b>7 role-based dashboards</b> on one Node.js/Express + MySQL backend serving a React web app, a team
+      portal and a React Native Android app; slot-based experience builder, Cashfree checkout, PDF vouchers, real-time chat
+      and Firebase push. <b>Security:</b> audited with Burp Suite and remediated SQL injection, IDOR, broken access control
+      and unauthenticated open routes; built a payment fraud detection system and added Cloudflare WAF/DNS protection and
+      Microsoft Clarity behaviour analytics.
+      <span class="tech">React | React Native | Node.js | MySQL | Cashfree | Firebase | JWT | Cloudflare</span>
+    </p>
+  </div>
+
+  <div class="proj">
+    <div class="row">
+      <span class="role">CypherMind (HACKER-AI) - Autonomous AI Penetration Testing Platform</span>
+      <span class="link">hacker-agent-frontend.vercel.app</span>
+    </div>
+    <p>
+      Autonomous agent running real tools (nmap, sqlmap, nuclei, Metasploit) in a Kali Docker sandbox from plain-language
+      goals; React + Electron client on Node.js with <b>multi-provider LLM failover</b>, <b>RAG over 300+ tools</b> and
+      CVSS-enriched reporting. <span class="tech">React | Electron | Node.js | Docker | RAG | Vector DB</span>
+    </p>
+  </div>
+
+  <div class="proj">
+    <div class="row">
+      <span class="role">Shri Yamuna Infra - Real Estate Community &amp; CRM Platform (Web + Mobile)</span>
+      <span class="link">yamunainfra.com</span>
+    </div>
+    <p>
+      Resident services (food, housekeeping, healthcare, transport, SOS) plus an agent CRM fed by a <b>WhatsApp lead
+      pipeline</b> that routes incoming enquiries straight to the assigned agent, and an <b>AI calling agent</b> that phones
+      clients, captures requirements, proposes matching properties, answers queries and auto-categorises every lead back
+      into the CRM pipeline. Includes an AI Concierge on RAG and a React Native app.
+      <span class="tech">React | React Native | Node.js | Express | RAG | WhatsApp API</span>
+    </p>
+  </div>
+
+  <div class="proj">
+    <div class="row">
+      <span class="role">Abhyas Shala - Mock Test &amp; Exam Preparation Platform (PWA + Android)</span>
+      <span class="link">abhyasshala.com</span>
+    </div>
+    <p>
+      Exam platform for UPSC, BPSC, SSC CGL, IBPS PO and RRB NTPC: React 19 + Vite timed engine with bilingual rendering;
+      Node.js + PostgreSQL backend with JWT auth, Cashfree subscriptions, invoice PDFs and live ranking;
+      <b>published on Google Play</b> as a TWA. <span class="tech">React 19 | Vite | Node.js | PostgreSQL | Nginx</span>
+    </p>
+  </div>
+
+  <div class="proj">
+    <div class="row">
+      <span class="role">Holiday Seychelles - Island Travel Booking Platform</span>
+      <span class="link">holidays-seychelles.com</span>
+    </div>
+    <p>
+      MakeMyTrip-style booking engine for hotels, transfers and excursions, integrated with the <b>TourVisio supplier API</b>
+      for real-time inventory, availability and pricing. Built search and checkout flows, transaction management with
+      payment reconciliation, voucher generation and a user dashboard for bookings and trip history.
+      <span class="tech">React | PostgreSQL | TourVisio API</span>
+    </p>
+  </div>
+
+  <h2>Achievements &amp; Leadership</h2>
+  <div class="row">
+    <span class="role">IT Lead | ICCICT Research Conference, Traveon Ventures</span>
+    <span class="date">Jan 2026 - Apr 2026</span>
+  </div>
+  <p>
+    Led IT operations for a 3-day international conference with <b>200+ attendees</b> and zero technical complaints;
+    awarded an appreciation certificate by the organizing committee.
+  </p>
+
+  <h2>Education</h2>
+  <div class="edu"><b>MCA, Artificial Intelligence - Amity University Online</b><span class="date">Jun 2025 - Jun 2027 (Expected)</span></div>
+  <div class="edu"><b>BCA, Computer Science - IGNOU</b><span class="date">Jul 2021 - Dec 2024</span></div>
+  <div class="edu"><b>B.A. - School of Open Learning, University of Delhi</b><span class="date">Jul 2019 - Jul 2023</span></div>
+  <div class="edu"><b>CBSE - Senior Secondary (Class XII)</b><span class="date">2019</span></div>
+  <div class="edu"><b>CBSE - Secondary (Class X)</b><span class="date">2017</span></div>
+
+</body>
+</html>

@@ -58,6 +58,29 @@ router.post('/image', protect, uploadImage.single('image'), async (req, res, nex
   }
 });
 
+/**
+ * Public CV download.
+ *
+ * The static /uploads mount serves the PDF inline, which makes the browser
+ * preview it instead of saving it. This sends the same file with a
+ * Content-Disposition attachment header and a clean filename.
+ */
+router.get('/resume/download', async (req, res, next) => {
+  try {
+    const doc = await Personal.findOne();
+    if (!doc || !doc.resumeFilename) {
+      return res.status(404).json({ message: 'No resume uploaded yet' });
+    }
+    const filePath = path.join(resumeDir, doc.resumeFilename);
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ message: 'Resume file is missing on the server' });
+    }
+    return res.download(filePath, 'Vishal-Kumar-Resume.pdf');
+  } catch (err) {
+    return next(err);
+  }
+});
+
 router.post('/resume', protect, uploadResume.single('resume'), async (req, res, next) => {
   try {
     const doc = await getOrCreate();
